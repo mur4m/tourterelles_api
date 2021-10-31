@@ -1,9 +1,6 @@
 import { Login } from './login'
 import { Request, Response } from 'express'
 import { RequestLoginDto } from './loginDto'
-import { JWT_PASSPHRASE } from 'src/constant';
-import jwt  from 'jsonwebtoken';
-import { verify } from 'argon2';
 
 export class LoginController {
     private useCase: Login;
